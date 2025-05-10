@@ -58,14 +58,14 @@ This project focuses on forecasting the **evolution of user sentiments over time
 
 ## 📊 Results
 
-| Model        | MSE       |
-|--------------|-----------|
-| Bi-LSTM      | 0.0001    |
-| TCN          | 0.0002    |
-| Transformer  | 0.0010    |
-| Moving Avg   | 0.0001    |
+| Model        | MSE         |
+|--------------|-------------|
+| Moving Avg   | 0.000112    |
+| Bi-LSTM      | 0.000148    |
+| TCN          | 0.000246    |
+| Transformer  | 0.000543    |
 
-**Insight**: Bi-LSTM performed best in trend forecasting. Transformer captured long-term dependencies but lagged in short-term volatility.
+**Insight**: Moving Average and Bi-LSTM performed best in trend forecasting. Transformer captured long-term dependencies but lagged in short-term volatility.
 
 ## 📎 License
 This project is for academic use only.
