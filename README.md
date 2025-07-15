@@ -37,9 +37,9 @@ This project focuses on forecasting the **evolution of user sentiments over time
 
 ## 🧠 Model Architectures
 
-### 1. Bi-LSTM (Main Model)
+### 1. LSTM (Main Model)
 - Input: Sliding window of past sentiment
-- BiLSTM (64 units per direction)
+- LSTM (64 units)
 - Dense output layer for `H`-step forecasting
 - Optimized with **MSE loss**, early stopping
 
@@ -61,11 +61,9 @@ This project focuses on forecasting the **evolution of user sentiments over time
 | Model        | MSE         |
 |--------------|-------------|
 | Moving Avg   | 0.000112    |
-| Bi-LSTM      | 0.000148    |
+| LSTM      | 0.000148    |
 | TCN          | 0.000246    |
 | Transformer  | 0.000543    |
 
-**Insight**: Moving Average and Bi-LSTM performed best in trend forecasting. Transformer captured long-term dependencies but lagged in short-term volatility.
+**Insight**: Moving Average and LSTM performed best in trend forecasting. Transformer captured long-term dependencies but lagged in short-term volatility.
 
-## 📎 License
-This project is for academic use only.
