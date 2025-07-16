@@ -31,7 +31,7 @@ This project focuses on forecasting the **evolution of user sentiments over time
 - Combined sentiment score = 0.5 × (Rating Score) + 0.5 × (VADER Score)
 - Normalized sentiment into weekly time windows
 - Forecasting using:
-  - **Bi-LSTM**
+  - **LSTM**
   - **Temporal Convolutional Network (TCN)**
   - **Transformer**
 
